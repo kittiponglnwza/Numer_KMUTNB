@@ -36,14 +36,14 @@ int main()
     double backward = Backward(x, h);
     double central = Central(x, h);
 
-    printf("Real Value (e^%.1f + 3): %.6f\n\n", x, real_val);
+    printf("Real Value (e^ %.1f + 3): %.6f\n\n", x, real_val);
 
     printf("Forward Difference: %.6f\n", forward);
     printf("Error: %f\n\n", error(real_val, forward));
 
     printf("Backward Difference: %.6f\n", backward);
     printf("Error: %f\n\n", error(real_val, backward));
-    
+
     printf("Central Difference: %.6f\n", central);
     printf("Error: %f\n", error(real_val, central));
 }
