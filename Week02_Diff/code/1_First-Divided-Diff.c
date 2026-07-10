@@ -46,4 +46,6 @@ int main()
 
     printf("Central Difference: %.6f\n", central);
     printf("Error: %f\n", error(real_val, central));
+
+    return 0 ;
 }
